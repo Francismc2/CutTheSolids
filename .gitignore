@@ -1,0 +1,148 @@
+# =========================
+# Unity Core Folders
+# =========================
+.utmp/
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+*.log
+
+# Memory & Recordings
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+
+# =========================
+# Unity Meta Handling
+# =========================
+# Never ignore Asset meta data
+!/[Aa]ssets/**/*.meta
+
+# Unity3D generated meta files
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# =========================
+# IDE & Editor Files
+# =========================
+.vs/
+.gradle/
+.consulo/
+ExportedObj/
+
+# Visual Studio / Rider
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.DotSettings.user
+
+# VS Code settings (ignore all except shared settings if needed)
+/.vscode/*
+!.vscode/settings.json
+
+# =========================
+# JetBrains Rider Plugin
+# =========================
+/[Aa]ssets/Plugins/Editor/JetBrains*
+
+# =========================
+# Blender Temp Files
+# =========================
+*.blend1
+*.blend1.meta
+
+# =========================
+# Builds & Packages
+# =========================
+*.apk
+*.aab
+*.app
+*.unitypackage
+*.unitypackage.meta
+
+/AssetBundles/
+IFXBuildToolProjects/
+Assets/IFX_Thumbnail_Assets/Saved_Thumbnails/*
+
+# =========================
+# Platform Build Scripts
+# =========================
+UserSettings.json
+UserSettings.json.meta
+
+Android_Temp.bat
+Android_Temp.bat.meta
+
+iOS_Temp.bat
+iOS_Temp.bat.meta
+
+iOSBuild.bat
+iOSBuild.bat.meta
+
+AndroidBuild.bat
+AndroidBuild.bat.meta
+
+# =========================
+# Crash & Diagnostics
+# =========================
+sysinfo.txt
+mono_crash.*
+crashlytics-build.properties
+
+# =========================
+# Test Runner
+# =========================
+InitTestScene*.unity*
+
+# =========================
+# Addressables
+# =========================
+/ServerData
+/[Aa]ssets/StreamingAssets/aa*
+/[Aa]ssets/AddressableAssetsData/link.xml*
+/[Aa]ssets/Addressables_Temp*
+/[Aa]ssets/AddressableAssetsData/*/*.bin*
+
+# =========================
+# Visual Scripting Auto Generated
+# =========================
+/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db
+/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db.meta
+/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers
+/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers.meta
+
+# =========================
+# Asset Store Tools (Optional)
+# =========================
+/Assets/AssetStoreTools*
+
+# =========================
+# Play Mode Test Scenes
+# =========================
+/[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+
+# =========================
+# Plastic SCM
+# =========================
+.plastic/plastic.changes
+.plastic/plastic.wktree
+
+# =========================
+# Internal Project Data
+# =========================
+Assets/ENGAGE_Internal

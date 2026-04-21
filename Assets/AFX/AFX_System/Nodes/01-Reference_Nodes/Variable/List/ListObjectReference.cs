@@ -1,0 +1,28 @@
+﻿using System.Collections.Generic;
+using UnityEngine;
+using XNode;
+
+namespace Engage.AFX.v1
+{
+    [CreateNodeMenu(AFXMenuTree.RefVariableList + "List Object Reference")]
+    public class ListObjectReference : ObjectReferenceNode<ListObjectComponent>
+    {
+        [SerializeField]
+        [Output(ShowBackingValue.Never)] protected List<Object> valueOut; // Don't Rename this!
+
+        public override object GetValue(NodePort port)
+        {
+            if (port.fieldName == ObjectOutPortName)
+            {
+                return ObjectOut;
+            }
+
+            if (port.fieldName == nameof(valueOut))
+            {
+                return ObjectOut.Value;
+            }
+
+            return null;
+        }
+    }
+}

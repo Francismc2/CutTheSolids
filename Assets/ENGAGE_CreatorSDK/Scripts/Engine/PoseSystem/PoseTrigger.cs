@@ -1,0 +1,6 @@
+
+
+namespace Engage.Avatars.Poses
+{
+   
+}

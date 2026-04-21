@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb5761925f3a1f549a5df3f951d9dc29, type: 3}
+  m_Name: Pose_Sit_OpenLegs
+  m_EditorClassIdentifier: 
+  m_uniqueName: Sit_OpenLegs
+  m_type: 1
+  m_disable: 0
+  m_headHandle:
+    Enabled: 0
+    OverrideTracking: 0
+    Position: {x: 0, y: 0.4416437, z: -0.05594188}
+    Rotation: {x: 0, y: 0, z: 0}
+    SnapToGround: 0
+    Parent: 0
+  m_pelvisHandle:
+    Enabled: 1
+    OverrideTracking: 0
+    Position: {x: 0.01, y: 0.01, z: 0.01}
+    Rotation: {x: 0.1, y: -90, z: 0.1}
+    SnapToGround: 0
+    Parent: 0
+  m_chestHandle:
+    Enabled: 0
+    OverrideTracking: 0
+    Position: {x: 0, y: 0.2250618, z: -0.0542699}
+    Rotation: {x: 0, y: 0, z: 0}
+    SnapToGround: 0
+    Parent: 0
+  m_rightFootHandle:
+    Enabled: 1
+    OverrideTracking: 0
+    Position: {x: 0.09605733, y: -0.2363164, z: 0.1646651}
+    Rotation: {x: 58.09622, y: 193.4364, z: 91.66813}
+    SnapToGround: 1
+    Parent: 0
+  m_leftFootHandle:
+    Enabled: 1
+    OverrideTracking: 0
+    Position: {x: -0.09209653, y: -0.2349854, z: 0.1705088}
+    Rotation: {x: 60.34111, y: 171.1108, z: 90.37538}
+    SnapToGround: 1
+    Parent: 0
+  m_rightKneeHandle:
+    Enabled: 1
+    OverrideTracking: 0
+    Position: {x: 0.1068328, y: 0, z: 0.2850472}
+    Rotation: {x: 0, y: 0, z: 0}
+    SnapToGround: 0
+    Parent: 0
+  m_leftKneeHandle:
+    Enabled: 1
+    OverrideTracking: 0
+    Position: {x: -0.1276204, y: 0, z: 0.2767832}
+    Rotation: {x: 0, y: 0, z: 0}
+    SnapToGround: 0
+    Parent: 0
+  m_rightHandHandle:
+    Enabled: 0
+    OverrideTracking: 0
+    Position: {x: 0.1131606, y: 0.03397411, z: 0.2446652}
+    Rotation: {x: 0, y: 0, z: 32.48011}
+    SnapToGround: 0
+    Parent: 0
+  m_leftHandHandle:
+    Enabled: 0
+    OverrideTracking: 0
+    Position: {x: -0.1250349, y: 0.03268551, z: 0.2354083}
+    Rotation: {x: 358.4815, y: 357.2627, z: 329.2392}
+    SnapToGround: 0
+    Parent: 0
+  m_rightElbowHandle:
+    Enabled: 0
+    OverrideTracking: 0
+    Position: {x: 0.147689, y: 0.04743166, z: 0.003877118}
+    Rotation: {x: 0, y: 0, z: 0}
+    SnapToGround: 0
+    Parent: 0
+  m_leftElbowHandle:
+    Enabled: 0
+    OverrideTracking: 0
+    Position: {x: -0.15374, y: 0.1037359, z: 0.02050998}
+    Rotation: {x: 0, y: 0, z: 0}
+    SnapToGround: 0
+    Parent: 0
