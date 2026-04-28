@@ -4,8 +4,12 @@
     {
         _Color ("Outside Color", Color) = (1,1,1,1)
         _CapColor ("Cap Color", Color) = (0.8,0.2,0.2,1)
-        _PlanePosition ("Plane Position", Vector) = (0,0,0,0)
-        _PlaneNormal ("Plane Normal", Vector) = (0,1,0,0)
+        _PlanePosX ("Plane Position X", Float) = 0
+        _PlanePosY ("Plane Position Y", Float) = 0
+        _PlanePosZ ("Plane Position Z", Float) = 0
+        _PlaneNormX ("Plane Normal X", Float) = 0
+        _PlaneNormY ("Plane Normal Y", Float) = 1
+        _PlaneNormZ ("Plane Normal Z", Float) = 0
         _Shininess ("Shininess", Range(1,128)) = 32
     }
     SubShader
@@ -44,7 +48,8 @@
             };
 
             float4 _Color;
-            float3 _PlanePosition, _PlaneNormal;
+            float _PlanePosX, _PlanePosY, _PlanePosZ;
+            float _PlaneNormX, _PlaneNormY, _PlaneNormZ;
             float  _Shininess;
 
             v2f vert(appdata v)
@@ -59,7 +64,9 @@
 
             fixed4 frag(v2f i) : SV_Target
             {
-                if (dot(i.worldPos - _PlanePosition, normalize(_PlaneNormal)) < 0) discard;
+                float3 planePos    = float3(_PlanePosX, _PlanePosY, _PlanePosZ);
+                float3 planeNormal = float3(_PlaneNormX, _PlaneNormY, _PlaneNormZ);
+                if (dot(i.worldPos - planePos, normalize(planeNormal)) < 0) discard;
 
                 float3 N = normalize(i.worldNormal);
                 float3 L = normalize(_WorldSpaceLightPos0.xyz);
@@ -94,7 +101,8 @@
             struct appdata { float4 vertex : POSITION; };
             struct v2f { float4 pos : SV_POSITION; float3 worldPos : TEXCOORD0; };
 
-            float3 _PlanePosition, _PlaneNormal;
+            float _PlanePosX, _PlanePosY, _PlanePosZ;
+            float _PlaneNormX, _PlaneNormY, _PlaneNormZ;
 
             v2f vert(appdata v)
             {
@@ -106,7 +114,9 @@
 
             fixed4 frag_inside(v2f i) : SV_Target
             {
-                if (dot(i.worldPos - _PlanePosition, normalize(_PlaneNormal)) < 0) discard;
+                float3 planePos    = float3(_PlanePosX, _PlanePosY, _PlanePosZ);
+                float3 planeNormal = float3(_PlaneNormX, _PlaneNormY, _PlaneNormZ);
+                if (dot(i.worldPos - planePos, normalize(planeNormal)) < 0) discard;
                 return fixed4(0,0,0,1);
             }
             ENDCG
@@ -133,22 +143,26 @@
             struct v2f_cap   { float4 pos : SV_POSITION; };
 
             float4 _CapColor;
-            float3 _PlanePosition, _PlaneNormal;
+            float _PlanePosX, _PlanePosY, _PlanePosZ;
+            float _PlaneNormX, _PlaneNormY, _PlaneNormZ;
             float  _Shininess;
 
             v2f_cap vert_cap(appdata v)
             {
                 v2f_cap o;
+                float3 planePos    = float3(_PlanePosX, _PlanePosY, _PlanePosZ);
+                float3 planeNormal = float3(_PlaneNormX, _PlaneNormY, _PlaneNormZ);
                 float3 worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
-                float  dist     = dot(worldPos - _PlanePosition, normalize(_PlaneNormal));
-                float3 snapped  = worldPos - dist * normalize(_PlaneNormal);
+                float  dist     = dot(worldPos - planePos, normalize(planeNormal));
+                float3 snapped  = worldPos - dist * normalize(planeNormal);
                 o.pos = mul(UNITY_MATRIX_VP, float4(snapped, 1.0));
                 return o;
             }
 
             fixed4 frag_cap(v2f_cap i) : SV_Target
             {
-                float3 N       = normalize(_PlaneNormal);
+                float3 planeNormal = float3(_PlaneNormX, _PlaneNormY, _PlaneNormZ);
+                float3 N       = normalize(planeNormal);
                 float3 L       = normalize(_WorldSpaceLightPos0.xyz);
                 float3 ambient = ShadeSH9(float4(N, 1));
                 float3 diffuse = _LightColor0.rgb * max(0, dot(N, L));
@@ -159,8 +173,6 @@
 
         // ═══════════════════════════════════════════════
         // FORWARDADD — runs once per extra light
-        //              (spotlights, point lights, extra directionals)
-        //              Blended additively on top of ForwardBase result
         // ═══════════════════════════════════════════════
 
         // PASS 4 — Front faces (ForwardAdd)
@@ -168,8 +180,8 @@
         {
             Tags { "LightMode"="ForwardAdd" }
             Cull Back
-            ZWrite Off          // base pass already wrote depth
-            Blend One One       // additive blend over base result
+            ZWrite Off
+            Blend One One
 
             CGPROGRAM
             #pragma vertex vert
@@ -185,11 +197,12 @@
                 float4 pos        : SV_POSITION;
                 float3 worldPos   : TEXCOORD0;
                 float3 worldNormal : TEXCOORD1;
-                LIGHTING_COORDS(2, 3)   // works for spot + point + directional
+                LIGHTING_COORDS(2, 3)
             };
 
             float4 _Color;
-            float3 _PlanePosition, _PlaneNormal;
+            float _PlanePosX, _PlanePosY, _PlanePosZ;
+            float _PlaneNormX, _PlaneNormY, _PlaneNormZ;
             float  _Shininess;
 
             v2f vert(appdata v)
@@ -204,18 +217,18 @@
 
             fixed4 frag(v2f i) : SV_Target
             {
-                if (dot(i.worldPos - _PlanePosition, normalize(_PlaneNormal)) < 0) discard;
+                float3 planePos    = float3(_PlanePosX, _PlanePosY, _PlanePosZ);
+                float3 planeNormal = float3(_PlaneNormX, _PlaneNormY, _PlaneNormZ);
+                if (dot(i.worldPos - planePos, normalize(planeNormal)) < 0) discard;
 
                 float3 N = normalize(i.worldNormal);
 
-                // For spot/point lights _WorldSpaceLightPos0.w == 1 and xyz is position
-                // For directional lights .w == 0 and xyz is direction
                 #ifdef USING_DIRECTIONAL_LIGHT
                     float3 L = normalize(_WorldSpaceLightPos0.xyz);
                     float  atten = 1.0;
                 #else
                     float3 L = normalize(_WorldSpaceLightPos0.xyz - i.worldPos);
-                    float  atten = LIGHT_ATTENUATION(i);  // handles spot cone + falloff
+                    float  atten = LIGHT_ATTENUATION(i);
                 #endif
 
                 float3 V = normalize(_WorldSpaceCameraPos - i.worldPos);
@@ -252,14 +265,17 @@
             struct v2f_cap  { float4 pos : SV_POSITION; float3 worldPos : TEXCOORD0; };
 
             float4 _CapColor;
-            float3 _PlanePosition, _PlaneNormal;
+            float _PlanePosX, _PlanePosY, _PlanePosZ;
+            float _PlaneNormX, _PlaneNormY, _PlaneNormZ;
 
             v2f_cap vert_cap(appdata v)
             {
                 v2f_cap o;
+                float3 planePos    = float3(_PlanePosX, _PlanePosY, _PlanePosZ);
+                float3 planeNormal = float3(_PlaneNormX, _PlaneNormY, _PlaneNormZ);
                 float3 worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
-                float  dist     = dot(worldPos - _PlanePosition, normalize(_PlaneNormal));
-                float3 snapped  = worldPos - dist * normalize(_PlaneNormal);
+                float  dist     = dot(worldPos - planePos, normalize(planeNormal));
+                float3 snapped  = worldPos - dist * normalize(planeNormal);
                 o.pos      = mul(UNITY_MATRIX_VP, float4(snapped, 1.0));
                 o.worldPos = snapped;
                 return o;
@@ -267,14 +283,15 @@
 
             fixed4 frag_cap(v2f_cap i) : SV_Target
             {
-                float3 N = normalize(_PlaneNormal);
+                float3 planeNormal = float3(_PlaneNormX, _PlaneNormY, _PlaneNormZ);
+                float3 N = normalize(planeNormal);
 
                 #ifdef USING_DIRECTIONAL_LIGHT
                     float3 L    = normalize(_WorldSpaceLightPos0.xyz);
                     float  atten = 1.0;
                 #else
                     float3 L    = normalize(_WorldSpaceLightPos0.xyz - i.worldPos);
-                    float  atten = 1.0; // cap has no LIGHTING_COORDS, approximate
+                    float  atten = 1.0;
                 #endif
 
                 float3 diffuse = _LightColor0.rgb * max(0, dot(N, L));
@@ -283,6 +300,49 @@
             ENDCG
         }
 
-        UsePass "Legacy Shaders/VertexLit/SHADOWCASTER"
+        // ═══════════════════════════════════════════════
+        // SHADOW CASTER — custom pass so clipped geometry
+        // does not cast shadows onto the scene
+        // ═══════════════════════════════════════════════
+
+        Pass
+        {
+            Tags { "LightMode"="ShadowCaster" }
+            Cull Back
+            ZWrite On
+
+            CGPROGRAM
+            #pragma vertex vert_shadow
+            #pragma fragment frag_shadow
+            #pragma multi_compile_shadowcaster
+            #include "UnityCG.cginc"
+
+            struct appdata { float4 vertex : POSITION; float3 normal : NORMAL; };
+            struct v2f_shadow
+            {
+                V2F_SHADOW_CASTER;
+                float3 worldPos : TEXCOORD1;
+            };
+
+            float _PlanePosX, _PlanePosY, _PlanePosZ;
+            float _PlaneNormX, _PlaneNormY, _PlaneNormZ;
+
+            v2f_shadow vert_shadow(appdata v)
+            {
+                v2f_shadow o;
+                TRANSFER_SHADOW_CASTER_NORMALOFFSET(o)
+                o.worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
+                return o;
+            }
+
+            fixed4 frag_shadow(v2f_shadow i) : SV_Target
+            {
+                float3 planePos    = float3(_PlanePosX, _PlanePosY, _PlanePosZ);
+                float3 planeNormal = float3(_PlaneNormX, _PlaneNormY, _PlaneNormZ);
+                if (dot(i.worldPos - planePos, normalize(planeNormal)) < 0) discard;
+                SHADOW_CASTER_FRAGMENT(i)
+            }
+            ENDCG
+        }
     }
 }

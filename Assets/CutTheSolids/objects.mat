@@ -84,6 +84,6 @@ Material:
     - _Color: {r: 0.4151149, g: 0.6226415, b: 0.36712354, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _InsideColor: {r: 0.29958197, g: 0.9716981, b: 0.068752214, a: 1}
-    - _PlaneNormal: {r: -0.19877695, g: 0.9800448, b: 0, a: 0}
-    - _PlanePosition: {r: -0.055333946, g: 1.2070837, b: 7.5947266, a: 0}
+    - _PlaneNormal: {r: 0, g: 1, b: 0, a: 0}
+    - _PlanePosition: {r: 3.73, g: 1.04, b: 9.01, a: 0}
   m_BuildTextureStacks: []
