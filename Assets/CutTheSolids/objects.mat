@@ -81,9 +81,9 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _CapColor: {r: 0, g: 1, b: 0.13333344, a: 1}
-    - _Color: {r: 1, g: 0, b: 0, a: 1}
+    - _Color: {r: 0.4151149, g: 0.6226415, b: 0.36712354, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _InsideColor: {r: 0.29958197, g: 0.9716981, b: 0.068752214, a: 1}
-    - _PlaneNormal: {r: 0, g: 0.42084587, b: -0.9071322, a: 0}
-    - _PlanePosition: {r: 0, g: -0.50226897, b: 41.412674, a: 0}
+    - _PlaneNormal: {r: -0.19877695, g: 0.9800448, b: 0, a: 0}
+    - _PlanePosition: {r: -0.055333946, g: 1.2070837, b: 7.5947266, a: 0}
   m_BuildTextureStacks: []
