@@ -20,10 +20,10 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.7824394, g: 0.7861665, b: 0.7941176, a: 1}
+  m_AmbientSkyColor: {r: 0, g: 0, b: 0, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
+  m_AmbientIntensity: 0
   m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
@@ -96,7 +96,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 160098ef1b7b31d4d974172515663c4f,
+  m_LightingDataAsset: {fileID: 112000000, guid: 31498b68148df8e4184218d0a4e5e2fc,
     type: 2}
   m_LightingSettings: {fileID: 2046873908}
 --- !u!196 &5
@@ -925,8 +925,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 398228422}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.192881, y: 0.17012662, z: 0.03397747, w: 0.9657637}
-  m_LocalPosition: {x: 0, y: 2.76, z: 0}
+  m_LocalRotation: {x: 0.11347702, y: -0.9613651, z: 0.03255345, w: 0.24867742}
+  m_LocalPosition: {x: 20.185276, y: 1.6919398, z: 14.240463}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -944,7 +944,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.17
+  m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -5962,7 +5962,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 7.51}
-  m_LocalScale: {x: 22.209433, y: -0.062199626, z: 27.117577}
+  m_LocalScale: {x: 418.6298, y: -0.25571862, z: 274.64453}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4000012043180295}
