@@ -14,6 +14,14 @@
         _PlaneNormZ ("Plane Normal Z", Float) = 0
 
         _Shininess ("Shininess", Range(1,128)) = 32
+
+        // Cap brightness boost
+        _CapAmbientBoost ("Cap Ambient Boost", Range(0,1)) = 0.35
+
+        // Rim / Edge highlight
+        _RimColor ("Rim Color", Color) = (1,1,1,1)
+        _RimPower ("Rim Power", Range(0.5,8)) = 3
+        _RimStrength ("Rim Strength", Range(0,2)) = 0.2
     }
 
     SubShader
@@ -22,12 +30,8 @@
         LOD 100
 
         // =========================================================
-        // FORWARD BASE
-        // =========================================================
-
-        // ---------------------------------------------------------
         // PASS 1 — FRONT FACES
-        // ---------------------------------------------------------
+        // =========================================================
         Pass
         {
             Tags { "LightMode"="ForwardBase" }
@@ -68,6 +72,10 @@
 
             float4 _Color;
 
+            float4 _RimColor;
+            float _RimPower;
+            float _RimStrength;
+
             float _PlanePosX;
             float _PlanePosY;
             float _PlanePosZ;
@@ -106,7 +114,6 @@
                         _PlaneNormY,
                         _PlaneNormZ));
 
-                // CLIP
                 if (dot(i.worldPos - planePos, planeNormal) < 0)
                     discard;
 
@@ -119,7 +126,8 @@
                     ShadeSH9(float4(N, 1));
 
                 float3 diffuse =
-                    _LightColor0.rgb * max(0, dot(N, L));
+                    _LightColor0.rgb *
+                    max(0, dot(N, L));
 
                 float3 specular =
                     _LightColor0.rgb *
@@ -128,9 +136,21 @@
                 float shadow =
                     SHADOW_ATTENUATION(i);
 
+                // Rim lighting
+                float rim =
+                    1.0 - saturate(dot(N, V));
+
+                rim = pow(rim, _RimPower);
+
+                float3 rimLight =
+                    _RimColor.rgb *
+                    rim *
+                    _RimStrength;
+
                 float3 finalColor =
                     _Color.rgb *
-                    (ambient + (diffuse + specular) * shadow);
+                    (ambient + (diffuse + specular) * shadow)
+                    + rimLight;
 
                 return fixed4(finalColor, 1);
             }
@@ -138,9 +158,9 @@
             ENDCG
         }
 
-        // ---------------------------------------------------------
+        // =========================================================
         // PASS 2 — BACK FACE STENCIL
-        // ---------------------------------------------------------
+        // =========================================================
         Pass
         {
             Tags { "LightMode"="ForwardBase" }
@@ -214,9 +234,9 @@
             ENDCG
         }
 
-        // ---------------------------------------------------------
+        // =========================================================
         // PASS 3 — CAP
-        // ---------------------------------------------------------
+        // =========================================================
         Pass
         {
             Tags { "LightMode"="ForwardBase" }
@@ -225,7 +245,6 @@
             ZWrite On
             ZTest LEqual
 
-            // Helps reduce z-fighting
             Offset -1, -1
 
             Stencil
@@ -256,6 +275,8 @@
 
             float4 _CapColor;
 
+            float _CapAmbientBoost;
+
             float _PlanePosX;
             float _PlanePosY;
             float _PlanePosZ;
@@ -283,12 +304,9 @@
                 float dist =
                     dot(worldPos - planePos, planeNormal);
 
-                // Project vertex onto clipping plane
                 float3 snapped =
                     worldPos - dist * planeNormal;
 
-                // IMPORTANT:
-                // write correct depth on clipping plane
                 o.pos =
                     UnityWorldToClipPos(float4(snapped, 1.0));
 
@@ -315,8 +333,11 @@
                     _LightColor0.rgb *
                     max(0, dot(N, L));
 
+                float3 lighting =
+                    max(ambient + diffuse, _CapAmbientBoost);
+
                 float3 finalColor =
-                    _CapColor.rgb * (ambient + diffuse);
+                    _CapColor.rgb * lighting;
 
                 return fixed4(finalColor, 1);
             }
@@ -325,12 +346,8 @@
         }
 
         // =========================================================
-        // FORWARD ADD
-        // =========================================================
-
-        // ---------------------------------------------------------
         // PASS 4 — FRONT FACES ADDITIVE
-        // ---------------------------------------------------------
+        // =========================================================
         Pass
         {
             Tags { "LightMode"="ForwardAdd" }
@@ -341,7 +358,7 @@
 
             CGPROGRAM
             #pragma vertex vert
-            #pragma fragment frag
+            #pragma fragment frag_add
             #pragma multi_compile_fwdadd_fullshadows
 
             #include "UnityCG.cginc"
@@ -364,6 +381,10 @@
             };
 
             float4 _Color;
+
+            float4 _RimColor;
+            float _RimPower;
+            float _RimStrength;
 
             float _PlanePosX;
             float _PlanePosY;
@@ -393,7 +414,7 @@
                 return o;
             }
 
-            fixed4 frag(v2f i) : SV_Target
+            fixed4 frag_add(v2f i) : SV_Target
             {
                 float3 planePos =
                     float3(_PlanePosX, _PlanePosY, _PlanePosZ);
@@ -441,19 +462,31 @@
                     _LightColor0.rgb *
                     pow(max(0, dot(N, H)), _Shininess);
 
+                // Rim lighting
+                float rim =
+                    1.0 - saturate(dot(N, V));
+
+                rim = pow(rim, _RimPower);
+
+                float3 rimLight =
+                    _RimColor.rgb *
+                    rim *
+                    _RimStrength;
+
                 return fixed4(
                     _Color.rgb *
                     (diffuse + specular) *
-                    atten,
+                    atten
+                    + rimLight,
                     1);
             }
 
             ENDCG
         }
 
-        // ---------------------------------------------------------
+        // =========================================================
         // PASS 5 — CAP ADDITIVE
-        // ---------------------------------------------------------
+        // =========================================================
         Pass
         {
             Tags { "LightMode"="ForwardAdd" }
@@ -475,7 +508,7 @@
 
             CGPROGRAM
             #pragma vertex vert_cap
-            #pragma fragment frag_cap
+            #pragma fragment frag_cap_add
             #pragma multi_compile_fwdadd_fullshadows
 
             #include "UnityCG.cginc"
@@ -494,6 +527,8 @@
             };
 
             float4 _CapColor;
+
+            float _CapAmbientBoost;
 
             float _PlanePosX;
             float _PlanePosY;
@@ -525,8 +560,6 @@
                 float3 snapped =
                     worldPos - dist * planeNormal;
 
-                // IMPORTANT:
-                // correct depth
                 o.pos =
                     UnityWorldToClipPos(float4(snapped, 1.0));
 
@@ -535,7 +568,7 @@
                 return o;
             }
 
-            fixed4 frag_cap(v2f_cap i) : SV_Target
+            fixed4 frag_cap_add(v2f_cap i) : SV_Target
             {
                 float3 planeNormal =
                     normalize(float3(
@@ -565,10 +598,11 @@
                     _LightColor0.rgb *
                     max(0, dot(N, L));
 
+                float3 lighting =
+                    max(diffuse * atten, _CapAmbientBoost * 0.25);
+
                 return fixed4(
-                    _CapColor.rgb *
-                    diffuse *
-                    atten,
+                    _CapColor.rgb * lighting,
                     1);
             }
 
@@ -578,7 +612,6 @@
         // =========================================================
         // SHADOW CASTER
         // =========================================================
-
         Pass
         {
             Tags { "LightMode"="ShadowCaster" }

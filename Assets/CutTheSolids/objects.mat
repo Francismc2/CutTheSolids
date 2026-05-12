@@ -62,6 +62,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _BumpScale: 1
+    - _CapAmbientBoost: 0.586
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
@@ -72,6 +73,14 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _PlaneNormX: 0
+    - _PlaneNormY: 1
+    - _PlaneNormZ: 0
+    - _PlanePosX: 0
+    - _PlanePosY: 0
+    - _PlanePosZ: 0
+    - _RimPower: 5.98
+    - _RimStrength: 1.229
     - _Shininess: 26
     - _Smoothness: 0.161
     - _SmoothnessTextureChannel: 0
@@ -80,10 +89,11 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _CapColor: {r: 0, g: 1, b: 0.13333344, a: 1}
-    - _Color: {r: 0.4151149, g: 0.6226415, b: 0.36712354, a: 1}
+    - _CapColor: {r: 0.34451762, g: 0.7881303, b: 0.9245283, a: 1}
+    - _Color: {r: 0, g: 0.37254903, b: 0.8, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _InsideColor: {r: 0.29958197, g: 0.9716981, b: 0.068752214, a: 1}
     - _PlaneNormal: {r: 0, g: 1, b: 0, a: 0}
     - _PlanePosition: {r: 3.73, g: 1.04, b: 9.01, a: 0}
+    - _RimColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
