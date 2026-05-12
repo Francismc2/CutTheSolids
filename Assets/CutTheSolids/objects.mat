@@ -79,8 +79,8 @@ Material:
     - _PlanePosX: 0
     - _PlanePosY: 0
     - _PlanePosZ: 0
-    - _RimPower: 5.98
-    - _RimStrength: 1.229
+    - _RimPower: 4.94
+    - _RimStrength: 0.94
     - _Shininess: 26
     - _Smoothness: 0.161
     - _SmoothnessTextureChannel: 0

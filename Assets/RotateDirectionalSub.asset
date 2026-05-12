@@ -32,7 +32,7 @@ MonoBehaviour:
       _dynamic: 0
   referenceName: Light
   objectOut: {fileID: 0}
---- !u!114 &-9132396744084315787
+--- !u!114 &-8256502507341654458
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,75 +41,40 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9075625496fc2ec459bbf4070c8c7748, type: 3}
-  m_Name: Quaternion Constructor
+  m_Script: {fileID: 11500000, guid: 9cb32c2f5a209d74ba2a57f6d3728ac3, type: 3}
+  m_Name: Float Reference
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 936, y: 264}
+  position: {x: 504, y: 1208}
   ports:
     keys:
-    - xIn
-    - yIn
-    - zIn
-    - wIn
-    - quaternionOut
+    - valueOut
+    - objectOut
     values:
-    - _fieldName: xIn
-      _node: {fileID: -9132396744084315787}
+    - _fieldName: valueOut
+      _node: {fileID: -8256502507341654458}
       _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections:
-      - fieldName: output
-        node: {fileID: -3730687751085294144}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 2
-      _dynamic: 0
-    - _fieldName: yIn
-      _node: {fileID: -9132396744084315787}
-      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 2
-      _dynamic: 0
-    - _fieldName: zIn
-      _node: {fileID: -9132396744084315787}
-      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 2
-      _dynamic: 0
-    - _fieldName: wIn
-      _node: {fileID: -9132396744084315787}
-      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 2
-      _dynamic: 0
-    - _fieldName: quaternionOut
-      _node: {fileID: -9132396744084315787}
-      _typeQualifiedName: UnityEngine.Quaternion, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: rotation
-        node: {fileID: 5688908298800897086}
+      - fieldName: xIn
+        node: {fileID: -381220993776942454}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  xIn: 0
-  yIn: 0
-  zIn: 0
-  wIn: 0
-  quaternionOut: {x: 0, y: 0, z: 0, w: 0}
+    - _fieldName: objectOut
+      _node: {fileID: -8256502507341654458}
+      _typeQualifiedName: Engage.AFX.v1.FloatComponent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  referenceName: ResetX
+  objectOut: {fileID: 0}
+  valueOut: 0
 --- !u!114 &-6443415306124082107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,6 +185,76 @@ MonoBehaviour:
       _typeConstraint: 2
       _dynamic: 0
   input: 0
+--- !u!114 &-6004367430816422467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ef66c3bccfef0046a9541d81d58759c, type: 3}
+  m_Name: Vector 3 Constructor
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 968, y: 296}
+  ports:
+    keys:
+    - xIn
+    - yIn
+    - zIn
+    - output
+    values:
+    - _fieldName: xIn
+      _node: {fileID: -6004367430816422467}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: output
+        node: {fileID: -3730687751085294144}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: yIn
+      _node: {fileID: -6004367430816422467}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: valueOut
+        node: {fileID: 4738388054592951359}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: zIn
+      _node: {fileID: -6004367430816422467}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: -6004367430816422467}
+      _typeQualifiedName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: vector3In
+        node: {fileID: 7067260430685582860}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  xIn: 0
+  yIn: 0
+  zIn: 0
+  output: {x: 0, y: 0, z: 0}
 --- !u!114 &-5524722333513015738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -465,7 +500,7 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: xIn
-        node: {fileID: -9132396744084315787}
+        node: {fileID: -6004367430816422467}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -489,7 +524,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: enter
-        node: {fileID: 5688908298800897086}
+        node: {fileID: 7067260430685582860}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -511,7 +546,7 @@ MonoBehaviour:
   m_Name: Set Bool
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 1304, y: 488}
+  position: {x: 1352, y: 488}
   ports:
     keys:
     - boolComponent
@@ -556,7 +591,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: exit
-        node: {fileID: 5688908298800897086}
+        node: {fileID: 7067260430685582860}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -644,6 +679,9 @@ MonoBehaviour:
       - fieldName: B
         node: {fileID: 2681944592914714613}
         reroutePoints: []
+      - fieldName: xIn
+        node: {fileID: 7081857897356970707}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -663,6 +701,76 @@ MonoBehaviour:
   referenceName: rotationNowX
   objectOut: {fileID: 0}
   valueOut: 0
+--- !u!114 &-381220993776942454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ef66c3bccfef0046a9541d81d58759c, type: 3}
+  m_Name: Vector 3 Constructor
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 1288, y: 856}
+  ports:
+    keys:
+    - xIn
+    - yIn
+    - zIn
+    - output
+    values:
+    - _fieldName: xIn
+      _node: {fileID: -381220993776942454}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: valueOut
+        node: {fileID: -8256502507341654458}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: yIn
+      _node: {fileID: -381220993776942454}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: valueOut
+        node: {fileID: 703019615023257300}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: zIn
+      _node: {fileID: -381220993776942454}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: -381220993776942454}
+      _typeQualifiedName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: vector3In
+        node: {fileID: 1702219606286276153}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  xIn: 0
+  yIn: 0
+  zIn: 0
+  output: {x: 0, y: 0, z: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -673,40 +781,41 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0b07cc6940040a84ca17ee3cfebe2a57, type: 3}
-  m_Name: RotateDirectional
+  m_Name: RotateDirectionalSub
   m_EditorClassIdentifier: 
   nodes:
   - {fileID: -9167506144874038835}
   - {fileID: 5231491563910338395}
   - {fileID: -5524722333513015738}
   - {fileID: 1340485709089313161}
-  - {fileID: 2958946447000212368}
   - {fileID: 4738388054592951359}
   - {fileID: -4778250687987923014}
   - {fileID: -5351540840410104420}
   - {fileID: 7497367231712988268}
   - {fileID: 4173399873350560471}
-  - {fileID: 1506868096105668232}
   - {fileID: 1235939173365762840}
   - {fileID: 6222607187078349167}
   - {fileID: 2681944592914714613}
   - {fileID: 8447860013393084637}
-  - {fileID: 5688908298800897086}
   - {fileID: -437157916525519423}
   - {fileID: 8198477003882603265}
   - {fileID: -3730687751085294144}
-  - {fileID: -9132396744084315787}
   - {fileID: -3411672870449191494}
   - {fileID: -2904635682355481470}
   - {fileID: -4023749598373412453}
   - {fileID: 6411722999579024645}
-  - {fileID: 4251473018964185385}
   - {fileID: 5019210810757625331}
   - {fileID: -6122595774934452961}
   - {fileID: -6443415306124082107}
-  - {fileID: 1326688013381693698}
   - {fileID: 1519359988303934077}
   - {fileID: 703019615023257300}
+  - {fileID: 3415916416326683447}
+  - {fileID: 7081857897356970707}
+  - {fileID: -6004367430816422467}
+  - {fileID: 7067260430685582860}
+  - {fileID: -381220993776942454}
+  - {fileID: -8256502507341654458}
+  - {fileID: 1702219606286276153}
 --- !u!114 &703019615023257300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -733,6 +842,9 @@ MonoBehaviour:
       connections:
       - fieldName: valueIn
         node: {fileID: 6411722999579024645}
+        reroutePoints: []
+      - fieldName: yIn
+        node: {fileID: -381220993776942454}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -763,7 +875,7 @@ MonoBehaviour:
   m_Name: Set Bool
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 904, y: -120}
+  position: {x: 920, y: -120}
   ports:
     keys:
     - boolComponent
@@ -808,7 +920,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: exit
-        node: {fileID: 2958946447000212368}
+        node: {fileID: 3415916416326683447}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -826,74 +938,6 @@ MonoBehaviour:
   boolComponent: {fileID: 0}
   valueIn: 0
   output: 0
---- !u!114 &1326688013381693698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f922bac9d4d94042bd9694405f39cb4, type: 3}
-  m_Name: Set Rotation
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: 1400, y: 1064}
-  ports:
-    keys:
-    - transform
-    - rotation
-    - enter
-    - exit
-    values:
-    - _fieldName: transform
-      _node: {fileID: 1326688013381693698}
-      _typeQualifiedName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 2
-      _dynamic: 0
-    - _fieldName: rotation
-      _node: {fileID: 1326688013381693698}
-      _typeQualifiedName: UnityEngine.Quaternion, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: quaternionOut
-        node: {fileID: 4251473018964185385}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 2
-      _dynamic: 0
-    - _fieldName: enter
-      _node: {fileID: 1326688013381693698}
-      _typeQualifiedName: Engage.AFX.v1.AFXFlow, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: exit
-        node: {fileID: 1519359988303934077}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 2
-      _dynamic: 0
-    - _fieldName: exit
-      _node: {fileID: 1326688013381693698}
-      _typeQualifiedName: Engage.AFX.v1.AFXFlow, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: enter
-        node: {fileID: 5019210810757625331}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 2
-      _dynamic: 0
-  transform: {fileID: 0}
-  rotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &1340485709089313161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -952,8 +996,14 @@ MonoBehaviour:
       _typeQualifiedName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
-      - fieldName: transform
-        node: {fileID: 2958946447000212368}
+      - fieldName: transformIn
+        node: {fileID: 3415916416326683447}
+        reroutePoints: []
+      - fieldName: transformIn
+        node: {fileID: 7067260430685582860}
+        reroutePoints: []
+      - fieldName: transformIn
+        node: {fileID: 1702219606286276153}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -983,84 +1033,6 @@ MonoBehaviour:
   transform: {fileID: 0}
   layer: 0
   tag: 
---- !u!114 &1506868096105668232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9075625496fc2ec459bbf4070c8c7748, type: 3}
-  m_Name: Quaternion Constructor
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: 536, y: -344}
-  ports:
-    keys:
-    - xIn
-    - yIn
-    - zIn
-    - wIn
-    - quaternionOut
-    values:
-    - _fieldName: xIn
-      _node: {fileID: 1506868096105668232}
-      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 2
-      _dynamic: 0
-    - _fieldName: yIn
-      _node: {fileID: 1506868096105668232}
-      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: output
-        node: {fileID: 4173399873350560471}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 2
-      _dynamic: 0
-    - _fieldName: zIn
-      _node: {fileID: 1506868096105668232}
-      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 2
-      _dynamic: 0
-    - _fieldName: wIn
-      _node: {fileID: 1506868096105668232}
-      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 2
-      _dynamic: 0
-    - _fieldName: quaternionOut
-      _node: {fileID: 1506868096105668232}
-      _typeQualifiedName: UnityEngine.Quaternion, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: rotation
-        node: {fileID: 2958946447000212368}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  xIn: 0
-  yIn: 0
-  zIn: 0
-  wIn: 0
-  quaternionOut: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &1519359988303934077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1108,10 +1080,7 @@ MonoBehaviour:
       _node: {fileID: 1519359988303934077}
       _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: xIn
-        node: {fileID: 4251473018964185385}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -1134,7 +1103,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: enter
-        node: {fileID: 1326688013381693698}
+        node: {fileID: 1702219606286276153}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -1143,6 +1112,85 @@ MonoBehaviour:
   floatComponent: {fileID: 0}
   valueIn: 0
   output: 0
+--- !u!114 &1702219606286276153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f95468212938197409f08aaf9c0da638, type: 3}
+  m_Name: Set Euler Angles
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 1368, y: 1064}
+  ports:
+    keys:
+    - transformIn
+    - worldSpace
+    - vector3In
+    - enter
+    - exit
+    values:
+    - _fieldName: transformIn
+      _node: {fileID: 1702219606286276153}
+      _typeQualifiedName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: transform
+        node: {fileID: 1340485709089313161}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: worldSpace
+      _node: {fileID: 1702219606286276153}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: vector3In
+      _node: {fileID: 1702219606286276153}
+      _typeQualifiedName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: output
+        node: {fileID: -381220993776942454}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: enter
+      _node: {fileID: 1702219606286276153}
+      _typeQualifiedName: Engage.AFX.v1.AFXFlow, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: exit
+        node: {fileID: 1519359988303934077}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: 1702219606286276153}
+      _typeQualifiedName: Engage.AFX.v1.AFXFlow, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+  transformIn: {fileID: 0}
+  worldSpace: 0
+  vector3In: {x: 0, y: 0, z: 0}
 --- !u!114 &2681944592914714613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1199,7 +1247,7 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 1
---- !u!114 &2958946447000212368
+--- !u!114 &3415916416326683447
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1208,20 +1256,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f922bac9d4d94042bd9694405f39cb4, type: 3}
-  m_Name: Set Rotation
+  m_Script: {fileID: 11500000, guid: f95468212938197409f08aaf9c0da638, type: 3}
+  m_Name: Set Euler Angles
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
   position: {x: 664, y: -120}
   ports:
     keys:
-    - transform
-    - rotation
+    - transformIn
+    - worldSpace
+    - vector3In
     - enter
     - exit
     values:
-    - _fieldName: transform
-      _node: {fileID: 2958946447000212368}
+    - _fieldName: transformIn
+      _node: {fileID: 3415916416326683447}
       _typeQualifiedName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
@@ -1232,20 +1281,29 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 2
       _dynamic: 0
-    - _fieldName: rotation
-      _node: {fileID: 2958946447000212368}
-      _typeQualifiedName: UnityEngine.Quaternion, UnityEngine.CoreModule, Version=0.0.0.0,
+    - _fieldName: worldSpace
+      _node: {fileID: 3415916416326683447}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: vector3In
+      _node: {fileID: 3415916416326683447}
+      _typeQualifiedName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
-      - fieldName: quaternionOut
-        node: {fileID: 1506868096105668232}
+      - fieldName: output
+        node: {fileID: 7081857897356970707}
         reroutePoints: []
       _direction: 0
       _connectionType: 1
       _typeConstraint: 2
       _dynamic: 0
     - _fieldName: enter
-      _node: {fileID: 2958946447000212368}
+      _node: {fileID: 3415916416326683447}
       _typeQualifiedName: Engage.AFX.v1.AFXFlow, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
@@ -1257,7 +1315,7 @@ MonoBehaviour:
       _typeConstraint: 2
       _dynamic: 0
     - _fieldName: exit
-      _node: {fileID: 2958946447000212368}
+      _node: {fileID: 3415916416326683447}
       _typeQualifiedName: Engage.AFX.v1.AFXFlow, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
@@ -1268,8 +1326,9 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 2
       _dynamic: 0
-  transform: {fileID: 0}
-  rotation: {x: 0, y: 0, z: 0, w: 0}
+  transformIn: {fileID: 0}
+  worldSpace: 0
+  vector3In: {x: 0, y: 0, z: 0}
 --- !u!114 &4173399873350560471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1322,7 +1381,7 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: yIn
-        node: {fileID: 1506868096105668232}
+        node: {fileID: 7081857897356970707}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -1346,7 +1405,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: enter
-        node: {fileID: 2958946447000212368}
+        node: {fileID: 3415916416326683447}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -1355,87 +1414,6 @@ MonoBehaviour:
   floatComponent: {fileID: 0}
   valueIn: 0
   output: 0
---- !u!114 &4251473018964185385
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9075625496fc2ec459bbf4070c8c7748, type: 3}
-  m_Name: Quaternion Constructor
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: 1304, y: 824}
-  ports:
-    keys:
-    - xIn
-    - yIn
-    - zIn
-    - wIn
-    - quaternionOut
-    values:
-    - _fieldName: xIn
-      _node: {fileID: 4251473018964185385}
-      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: output
-        node: {fileID: 1519359988303934077}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 2
-      _dynamic: 0
-    - _fieldName: yIn
-      _node: {fileID: 4251473018964185385}
-      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: output
-        node: {fileID: 6411722999579024645}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 2
-      _dynamic: 0
-    - _fieldName: zIn
-      _node: {fileID: 4251473018964185385}
-      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 2
-      _dynamic: 0
-    - _fieldName: wIn
-      _node: {fileID: 4251473018964185385}
-      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 2
-      _dynamic: 0
-    - _fieldName: quaternionOut
-      _node: {fileID: 4251473018964185385}
-      _typeQualifiedName: UnityEngine.Quaternion, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: rotation
-        node: {fileID: 1326688013381693698}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  xIn: 0
-  yIn: 0
-  zIn: 0
-  wIn: 0
-  quaternionOut: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &4738388054592951359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1462,6 +1440,9 @@ MonoBehaviour:
       connections:
       - fieldName: B
         node: {fileID: 5231491563910338395}
+        reroutePoints: []
+      - fieldName: yIn
+        node: {fileID: -6004367430816422467}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -1538,10 +1519,7 @@ MonoBehaviour:
       _node: {fileID: 5019210810757625331}
       _typeQualifiedName: Engage.AFX.v1.AFXFlow, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: exit
-        node: {fileID: 1326688013381693698}
-        reroutePoints: []
+      connections: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 2
@@ -1614,74 +1592,6 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 1
---- !u!114 &5688908298800897086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f922bac9d4d94042bd9694405f39cb4, type: 3}
-  m_Name: Set Rotation
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: 1064, y: 488}
-  ports:
-    keys:
-    - transform
-    - rotation
-    - enter
-    - exit
-    values:
-    - _fieldName: transform
-      _node: {fileID: 5688908298800897086}
-      _typeQualifiedName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 2
-      _dynamic: 0
-    - _fieldName: rotation
-      _node: {fileID: 5688908298800897086}
-      _typeQualifiedName: UnityEngine.Quaternion, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: quaternionOut
-        node: {fileID: -9132396744084315787}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 2
-      _dynamic: 0
-    - _fieldName: enter
-      _node: {fileID: 5688908298800897086}
-      _typeQualifiedName: Engage.AFX.v1.AFXFlow, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: exit
-        node: {fileID: -3730687751085294144}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 2
-      _dynamic: 0
-    - _fieldName: exit
-      _node: {fileID: 5688908298800897086}
-      _typeQualifiedName: Engage.AFX.v1.AFXFlow, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: enter
-        node: {fileID: -3411672870449191494}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 2
-      _dynamic: 0
-  transform: {fileID: 0}
-  rotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &6222607187078349167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1802,10 +1712,7 @@ MonoBehaviour:
       _node: {fileID: 6411722999579024645}
       _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: yIn
-        node: {fileID: 4251473018964185385}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -1837,6 +1744,158 @@ MonoBehaviour:
   floatComponent: {fileID: 0}
   valueIn: 0
   output: 0
+--- !u!114 &7067260430685582860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f95468212938197409f08aaf9c0da638, type: 3}
+  m_Name: Set Euler Angles
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 1096, y: 488}
+  ports:
+    keys:
+    - transformIn
+    - worldSpace
+    - vector3In
+    - enter
+    - exit
+    values:
+    - _fieldName: transformIn
+      _node: {fileID: 7067260430685582860}
+      _typeQualifiedName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: transform
+        node: {fileID: 1340485709089313161}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: worldSpace
+      _node: {fileID: 7067260430685582860}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: vector3In
+      _node: {fileID: 7067260430685582860}
+      _typeQualifiedName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: output
+        node: {fileID: -6004367430816422467}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: enter
+      _node: {fileID: 7067260430685582860}
+      _typeQualifiedName: Engage.AFX.v1.AFXFlow, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: exit
+        node: {fileID: -3730687751085294144}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: 7067260430685582860}
+      _typeQualifiedName: Engage.AFX.v1.AFXFlow, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: enter
+        node: {fileID: -3411672870449191494}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+  transformIn: {fileID: 0}
+  worldSpace: 0
+  vector3In: {x: 0, y: 0, z: 0}
+--- !u!114 &7081857897356970707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ef66c3bccfef0046a9541d81d58759c, type: 3}
+  m_Name: Vector 3 Constructor
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 520, y: -344}
+  ports:
+    keys:
+    - xIn
+    - yIn
+    - zIn
+    - output
+    values:
+    - _fieldName: xIn
+      _node: {fileID: 7081857897356970707}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: valueOut
+        node: {fileID: -437157916525519423}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: yIn
+      _node: {fileID: 7081857897356970707}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: output
+        node: {fileID: 4173399873350560471}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: zIn
+      _node: {fileID: 7081857897356970707}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: 7081857897356970707}
+      _typeQualifiedName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: vector3In
+        node: {fileID: 3415916416326683447}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  xIn: 0
+  yIn: 0
+  zIn: 0
+  output: {x: 0, y: 0, z: 0}
 --- !u!114 &7497367231712988268
 MonoBehaviour:
   m_ObjectHideFlags: 0
