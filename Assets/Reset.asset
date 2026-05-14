@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Name: Get Euler Angles
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 1000, y: 760}
+  position: {x: 984, y: 760}
   ports:
     keys:
     - transformIn
@@ -462,7 +462,7 @@ MonoBehaviour:
   m_Name: Get Position
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 984, y: 904}
+  position: {x: 984, y: 888}
   ports:
     keys:
     - transform
