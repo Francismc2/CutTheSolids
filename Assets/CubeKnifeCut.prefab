@@ -2710,14 +2710,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8391222552659086748, guid: a7ed4f6a74063cb4dbff1e3b2c1ac61b,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2191645003620310888}
-    - targetCorrespondingSourceObject: {fileID: -8391222552659086748, guid: a7ed4f6a74063cb4dbff1e3b2c1ac61b,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4340340841246863541}
-    - targetCorrespondingSourceObject: {fileID: -8391222552659086748, guid: a7ed4f6a74063cb4dbff1e3b2c1ac61b,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 8271397879877639842}
     - targetCorrespondingSourceObject: {fileID: -8391222552659086748, guid: a7ed4f6a74063cb4dbff1e3b2c1ac61b,
         type: 3}
@@ -2743,14 +2735,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 3460375900979195919}
-    - targetCorrespondingSourceObject: {fileID: -516098083770646512, guid: a7ed4f6a74063cb4dbff1e3b2c1ac61b,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1660922070941630285}
-    - targetCorrespondingSourceObject: {fileID: -516098083770646512, guid: a7ed4f6a74063cb4dbff1e3b2c1ac61b,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7395666365753732313}
     - targetCorrespondingSourceObject: {fileID: -516098083770646512, guid: a7ed4f6a74063cb4dbff1e3b2c1ac61b,
         type: 3}
       insertIndex: -1
@@ -2827,48 +2811,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.02, y: 0.019999996, z: 0.009930287}
   m_Center: {x: 0, y: 7.8463044e-19, z: -0.000049805887}
---- !u!114 &1660922070941630285
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1645980029386077455}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7238e4f8b171b245a9486e68b47ea00, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectRefsEngine:
-  - referenceName: reset
-    referenceValue: {fileID: 3012304076593112768}
-    typeAsString: Engage.AFX.v1.BoolComponent, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  - referenceName: Position
-    referenceValue: {fileID: 4741533246499729086}
-    typeAsString: Engage.AFX.v1.Vector3Component, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  - referenceName: Rotation
-    referenceValue: {fileID: 4897750887148149305}
-    typeAsString: Engage.AFX.v1.Vector3Component, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  - referenceName: objecttoReset
-    referenceValue: {fileID: 6244877716068150450}
-    typeAsString: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
---- !u!114 &7395666365753732313
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1645980029386077455}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c6e58ab3c3a92e4c86b9c8c308fbe69, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  afxNodeGraph: {fileID: 11400000, guid: 6b5086a081b2b3744a84e985e68e5225, type: 2}
 --- !u!114 &4741533246499729086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2923,18 +2865,6 @@ MonoBehaviour:
   uniqueID: lollipop
   recordable: 0
   interpolateSpeed: 1
---- !u!4 &6244877716068150450 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4083501151425157549, guid: a7ed4f6a74063cb4dbff1e3b2c1ac61b,
-    type: 3}
-  m_PrefabInstance: {fileID: 7926829692112794911}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &6771969580176148881 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -5477749408508380018, guid: a7ed4f6a74063cb4dbff1e3b2c1ac61b,
-    type: 3}
-  m_PrefabInstance: {fileID: 7926829692112794911}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7115872450204387406 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a7ed4f6a74063cb4dbff1e3b2c1ac61b,
@@ -3000,48 +2930,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movable: 1
   rotatable: 1
---- !u!114 &2191645003620310888
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7317683190773368699}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7238e4f8b171b245a9486e68b47ea00, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectRefsEngine:
-  - referenceName: reset
-    referenceValue: {fileID: 3966651750789749517}
-    typeAsString: Engage.AFX.v1.BoolComponent, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  - referenceName: Position
-    referenceValue: {fileID: 8271397879877639842}
-    typeAsString: Engage.AFX.v1.Vector3Component, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  - referenceName: Rotation
-    referenceValue: {fileID: 3006521197358511235}
-    typeAsString: Engage.AFX.v1.Vector3Component, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  - referenceName: objecttoReset
-    referenceValue: {fileID: 6771969580176148881}
-    typeAsString: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
---- !u!114 &4340340841246863541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7317683190773368699}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c6e58ab3c3a92e4c86b9c8c308fbe69, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  afxNodeGraph: {fileID: 11400000, guid: 6b5086a081b2b3744a84e985e68e5225, type: 2}
 --- !u!114 &8271397879877639842
 MonoBehaviour:
   m_ObjectHideFlags: 0
