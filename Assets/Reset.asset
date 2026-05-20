@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Name: Timer
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 2040, y: 1112}
+  position: {x: 1960, y: 1272}
   ports:
     keys:
     - restart
