@@ -10238,12 +10238,17 @@ PrefabInstance:
     - target: {fileID: 464416374868595823, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 464416374868595823, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrabRelease.m_PersistentCalls.m_Calls.Array.size
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 464416374868595823, guid: 9cc2d3b013dc93e4e947d773951022de,
+        type: 3}
+      propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 464416374868595823, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
@@ -10259,12 +10264,12 @@ PrefabInstance:
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 7993490540365700946}
     - target: {fileID: 464416374868595823, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 2660309654313186714}
+      objectReference: {fileID: 786075716509052334}
     - target: {fileID: 464416374868595823, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[2].m_Target
@@ -10294,6 +10299,11 @@ PrefabInstance:
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: set_Value
+      objectReference: {fileID: 0}
+    - target: {fileID: 464416374868595823, guid: 9cc2d3b013dc93e4e947d773951022de,
+        type: 3}
+      propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetFixedOwnerMe
       objectReference: {fileID: 0}
     - target: {fileID: 464416374868595823, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
@@ -10352,6 +10362,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 464416374868595823, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
+      propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Engage.IFX.NetworkStates.NetworkStateModule, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 464416374868595823, guid: 9cc2d3b013dc93e4e947d773951022de,
+        type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
       value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
@@ -10363,6 +10378,11 @@ PrefabInstance:
     - target: {fileID: 464416374868595823, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 464416374868595823, guid: 9cc2d3b013dc93e4e947d773951022de,
+        type: 3}
+      propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 464416374868595823, guid: 9cc2d3b013dc93e4e947d773951022de,
@@ -10423,12 +10443,17 @@ PrefabInstance:
     - target: {fileID: 1358921586338422589, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1358921586338422589, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrabRelease.m_PersistentCalls.m_Calls.Array.size
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1358921586338422589, guid: 9cc2d3b013dc93e4e947d773951022de,
+        type: 3}
+      propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1358921586338422589, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
@@ -10444,12 +10469,12 @@ PrefabInstance:
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5762334864006808532}
     - target: {fileID: 1358921586338422589, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 6150159765958268963}
+      objectReference: {fileID: 786075716509052334}
     - target: {fileID: 1358921586338422589, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[3].m_Target
@@ -10474,6 +10499,11 @@ PrefabInstance:
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: set_Value
+      objectReference: {fileID: 0}
+    - target: {fileID: 1358921586338422589, guid: 9cc2d3b013dc93e4e947d773951022de,
+        type: 3}
+      propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetFixedOwnerMe
       objectReference: {fileID: 0}
     - target: {fileID: 1358921586338422589, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
@@ -10532,6 +10562,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1358921586338422589, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
+      propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Engage.IFX.NetworkStates.NetworkStateModule, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1358921586338422589, guid: 9cc2d3b013dc93e4e947d773951022de,
+        type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
       value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
@@ -10593,12 +10628,17 @@ PrefabInstance:
     - target: {fileID: 1437861787135423242, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1437861787135423242, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrabRelease.m_PersistentCalls.m_Calls.Array.size
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437861787135423242, guid: 9cc2d3b013dc93e4e947d773951022de,
+        type: 3}
+      propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1437861787135423242, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
@@ -10614,12 +10654,12 @@ PrefabInstance:
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5517932431630077223}
     - target: {fileID: 1437861787135423242, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 2660309654313186714}
+      objectReference: {fileID: 786075716509052334}
     - target: {fileID: 1437861787135423242, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[3].m_Target
@@ -10644,6 +10684,11 @@ PrefabInstance:
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: set_Value
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437861787135423242, guid: 9cc2d3b013dc93e4e947d773951022de,
+        type: 3}
+      propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ReleaseFixedOwnership
       objectReference: {fileID: 0}
     - target: {fileID: 1437861787135423242, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
@@ -10702,6 +10747,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1437861787135423242, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
+      propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Engage.IFX.NetworkStates.NetworkStateModule, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437861787135423242, guid: 9cc2d3b013dc93e4e947d773951022de,
+        type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
       value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
@@ -10763,12 +10813,17 @@ PrefabInstance:
     - target: {fileID: 1982704890526043771, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1982704890526043771, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrabRelease.m_PersistentCalls.m_Calls.Array.size
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1982704890526043771, guid: 9cc2d3b013dc93e4e947d773951022de,
+        type: 3}
+      propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1982704890526043771, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
@@ -10789,12 +10844,12 @@ PrefabInstance:
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 3012479611025446253}
     - target: {fileID: 1982704890526043771, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 2768219841930005204}
+      objectReference: {fileID: 786075716509052334}
     - target: {fileID: 1982704890526043771, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[2].m_Target
@@ -10834,6 +10889,11 @@ PrefabInstance:
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: set_Value
+      objectReference: {fileID: 0}
+    - target: {fileID: 1982704890526043771, guid: 9cc2d3b013dc93e4e947d773951022de,
+        type: 3}
+      propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetFixedOwnerMe
       objectReference: {fileID: 0}
     - target: {fileID: 1982704890526043771, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
@@ -10897,6 +10957,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1982704890526043771, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
+      propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Engage.IFX.NetworkStates.NetworkStateModule, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1982704890526043771, guid: 9cc2d3b013dc93e4e947d773951022de,
+        type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
       value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
@@ -10913,6 +10978,11 @@ PrefabInstance:
     - target: {fileID: 1982704890526043771, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1982704890526043771, guid: 9cc2d3b013dc93e4e947d773951022de,
+        type: 3}
+      propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1982704890526043771, guid: 9cc2d3b013dc93e4e947d773951022de,
@@ -11028,12 +11098,17 @@ PrefabInstance:
     - target: {fileID: 2824122219317078476, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2824122219317078476, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrabRelease.m_PersistentCalls.m_Calls.Array.size
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2824122219317078476, guid: 9cc2d3b013dc93e4e947d773951022de,
+        type: 3}
+      propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2824122219317078476, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
@@ -11054,12 +11129,12 @@ PrefabInstance:
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5557296589319949611}
     - target: {fileID: 2824122219317078476, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 4247271931282245281}
+      objectReference: {fileID: 786075716509052334}
     - target: {fileID: 2824122219317078476, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[3].m_Target
@@ -11094,6 +11169,11 @@ PrefabInstance:
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: set_Value
+      objectReference: {fileID: 0}
+    - target: {fileID: 2824122219317078476, guid: 9cc2d3b013dc93e4e947d773951022de,
+        type: 3}
+      propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetFixedOwnerMe
       objectReference: {fileID: 0}
     - target: {fileID: 2824122219317078476, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
@@ -11154,6 +11234,11 @@ PrefabInstance:
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: Engage.AFX.v1.ValueComponent`1[[System.Boolean, mscorlib
+      objectReference: {fileID: 0}
+    - target: {fileID: 2824122219317078476, guid: 9cc2d3b013dc93e4e947d773951022de,
+        type: 3}
+      propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Engage.IFX.NetworkStates.NetworkStateModule, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2824122219317078476, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
@@ -11283,12 +11368,17 @@ PrefabInstance:
     - target: {fileID: 5479612116955037318, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5479612116955037318, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrabRelease.m_PersistentCalls.m_Calls.Array.size
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5479612116955037318, guid: 9cc2d3b013dc93e4e947d773951022de,
+        type: 3}
+      propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5479612116955037318, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
@@ -11309,12 +11399,12 @@ PrefabInstance:
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2612888952654219629}
     - target: {fileID: 5479612116955037318, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 7008063079576507697}
+      objectReference: {fileID: 786075716509052334}
     - target: {fileID: 5479612116955037318, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[2].m_Target
@@ -11354,6 +11444,11 @@ PrefabInstance:
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: set_Value
+      objectReference: {fileID: 0}
+    - target: {fileID: 5479612116955037318, guid: 9cc2d3b013dc93e4e947d773951022de,
+        type: 3}
+      propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetFixedOwnerMe
       objectReference: {fileID: 0}
     - target: {fileID: 5479612116955037318, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
@@ -11417,6 +11512,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5479612116955037318, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
+      propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Engage.IFX.NetworkStates.NetworkStateModule, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5479612116955037318, guid: 9cc2d3b013dc93e4e947d773951022de,
+        type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
       value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
@@ -11433,6 +11533,11 @@ PrefabInstance:
     - target: {fileID: 5479612116955037318, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5479612116955037318, guid: 9cc2d3b013dc93e4e947d773951022de,
+        type: 3}
+      propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5479612116955037318, guid: 9cc2d3b013dc93e4e947d773951022de,
@@ -11518,12 +11623,17 @@ PrefabInstance:
     - target: {fileID: 6823996217171145134, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6823996217171145134, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrabRelease.m_PersistentCalls.m_Calls.Array.size
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6823996217171145134, guid: 9cc2d3b013dc93e4e947d773951022de,
+        type: 3}
+      propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6823996217171145134, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
@@ -11539,12 +11649,12 @@ PrefabInstance:
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6937041871769283678}
     - target: {fileID: 6823996217171145134, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 6150159765958268963}
+      objectReference: {fileID: 786075716509052334}
     - target: {fileID: 6823996217171145134, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[2].m_Target
@@ -11574,6 +11684,11 @@ PrefabInstance:
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: set_Value
+      objectReference: {fileID: 0}
+    - target: {fileID: 6823996217171145134, guid: 9cc2d3b013dc93e4e947d773951022de,
+        type: 3}
+      propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetFixedOwnerMe
       objectReference: {fileID: 0}
     - target: {fileID: 6823996217171145134, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
@@ -11632,6 +11747,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6823996217171145134, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
+      propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Engage.IFX.NetworkStates.NetworkStateModule, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6823996217171145134, guid: 9cc2d3b013dc93e4e947d773951022de,
+        type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
       value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
@@ -11643,6 +11763,11 @@ PrefabInstance:
     - target: {fileID: 6823996217171145134, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6823996217171145134, guid: 9cc2d3b013dc93e4e947d773951022de,
+        type: 3}
+      propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6823996217171145134, guid: 9cc2d3b013dc93e4e947d773951022de,
@@ -11698,12 +11823,17 @@ PrefabInstance:
     - target: {fileID: 6830690833970444312, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6830690833970444312, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrabRelease.m_PersistentCalls.m_Calls.Array.size
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6830690833970444312, guid: 9cc2d3b013dc93e4e947d773951022de,
+        type: 3}
+      propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6830690833970444312, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
@@ -11724,12 +11854,12 @@ PrefabInstance:
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2260127564940551379}
     - target: {fileID: 6830690833970444312, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 9216024836988848387}
+      objectReference: {fileID: 786075716509052334}
     - target: {fileID: 6830690833970444312, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[2].m_Target
@@ -11769,6 +11899,11 @@ PrefabInstance:
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: set_Value
+      objectReference: {fileID: 0}
+    - target: {fileID: 6830690833970444312, guid: 9cc2d3b013dc93e4e947d773951022de,
+        type: 3}
+      propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ReleaseFixedOwnership
       objectReference: {fileID: 0}
     - target: {fileID: 6830690833970444312, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
@@ -11832,6 +11967,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6830690833970444312, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
+      propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Engage.IFX.NetworkStates.NetworkStateModule, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6830690833970444312, guid: 9cc2d3b013dc93e4e947d773951022de,
+        type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
       value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
@@ -11848,6 +11988,11 @@ PrefabInstance:
     - target: {fileID: 6830690833970444312, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6830690833970444312, guid: 9cc2d3b013dc93e4e947d773951022de,
+        type: 3}
+      propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6830690833970444312, guid: 9cc2d3b013dc93e4e947d773951022de,
@@ -11903,12 +12048,17 @@ PrefabInstance:
     - target: {fileID: 7245366782361041503, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7245366782361041503, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrabRelease.m_PersistentCalls.m_Calls.Array.size
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7245366782361041503, guid: 9cc2d3b013dc93e4e947d773951022de,
+        type: 3}
+      propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7245366782361041503, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
@@ -11924,12 +12074,12 @@ PrefabInstance:
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 304518223212776546}
     - target: {fileID: 7245366782361041503, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 2768219841930005204}
+      objectReference: {fileID: 786075716509052334}
     - target: {fileID: 7245366782361041503, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[3].m_Target
@@ -11954,6 +12104,11 @@ PrefabInstance:
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: set_Value
+      objectReference: {fileID: 0}
+    - target: {fileID: 7245366782361041503, guid: 9cc2d3b013dc93e4e947d773951022de,
+        type: 3}
+      propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetFixedOwnerMe
       objectReference: {fileID: 0}
     - target: {fileID: 7245366782361041503, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
@@ -12009,6 +12164,11 @@ PrefabInstance:
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: Engage.AFX.v1.ValueComponent`1[[System.Boolean, mscorlib
+      objectReference: {fileID: 0}
+    - target: {fileID: 7245366782361041503, guid: 9cc2d3b013dc93e4e947d773951022de,
+        type: 3}
+      propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Engage.IFX.NetworkStates.NetworkStateModule, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7245366782361041503, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
@@ -12088,6 +12248,11 @@ PrefabInstance:
     - target: {fileID: 7922182536882675803, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7922182536882675803, guid: 9cc2d3b013dc93e4e947d773951022de,
+        type: 3}
+      propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7922182536882675803, guid: 9cc2d3b013dc93e4e947d773951022de,
@@ -12109,12 +12274,12 @@ PrefabInstance:
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 3050397848950560514}
     - target: {fileID: 7922182536882675803, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 4247271931282245281}
+      objectReference: {fileID: 786075716509052334}
     - target: {fileID: 7922182536882675803, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[2].m_Target
@@ -12157,6 +12322,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7922182536882675803, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
+      propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetFixedOwnerMe
+      objectReference: {fileID: 0}
+    - target: {fileID: 7922182536882675803, guid: 9cc2d3b013dc93e4e947d773951022de,
+        type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
       value: SetActive
       objectReference: {fileID: 0}
@@ -12177,6 +12347,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7922182536882675803, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
+      propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Engage.IFX.NetworkStates.NetworkStateModule, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7922182536882675803, guid: 9cc2d3b013dc93e4e947d773951022de,
+        type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
       value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
@@ -12193,6 +12368,11 @@ PrefabInstance:
     - target: {fileID: 7922182536882675803, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7922182536882675803, guid: 9cc2d3b013dc93e4e947d773951022de,
+        type: 3}
+      propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7922182536882675803, guid: 9cc2d3b013dc93e4e947d773951022de,
@@ -12238,12 +12418,17 @@ PrefabInstance:
     - target: {fileID: 8696567930434929655, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8696567930434929655, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrabRelease.m_PersistentCalls.m_Calls.Array.size
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8696567930434929655, guid: 9cc2d3b013dc93e4e947d773951022de,
+        type: 3}
+      propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8696567930434929655, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
@@ -12259,12 +12444,12 @@ PrefabInstance:
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1415863812694285513}
     - target: {fileID: 8696567930434929655, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 9216024836988848387}
+      objectReference: {fileID: 786075716509052334}
     - target: {fileID: 8696567930434929655, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[3].m_Target
@@ -12289,6 +12474,11 @@ PrefabInstance:
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: set_Value
+      objectReference: {fileID: 0}
+    - target: {fileID: 8696567930434929655, guid: 9cc2d3b013dc93e4e947d773951022de,
+        type: 3}
+      propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetFixedOwnerMe
       objectReference: {fileID: 0}
     - target: {fileID: 8696567930434929655, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
@@ -12344,6 +12534,11 @@ PrefabInstance:
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: Engage.AFX.v1.ValueComponent`1[[System.Boolean, mscorlib
+      objectReference: {fileID: 0}
+    - target: {fileID: 8696567930434929655, guid: 9cc2d3b013dc93e4e947d773951022de,
+        type: 3}
+      propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Engage.IFX.NetworkStates.NetworkStateModule, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8696567930434929655, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
@@ -12408,12 +12603,17 @@ PrefabInstance:
     - target: {fileID: 9028399896345759867, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9028399896345759867, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrabRelease.m_PersistentCalls.m_Calls.Array.size
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9028399896345759867, guid: 9cc2d3b013dc93e4e947d773951022de,
+        type: 3}
+      propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9028399896345759867, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
@@ -12429,12 +12629,12 @@ PrefabInstance:
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8933959068131904916}
     - target: {fileID: 9028399896345759867, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 7008063079576507697}
+      objectReference: {fileID: 786075716509052334}
     - target: {fileID: 9028399896345759867, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[3].m_Target
@@ -12459,6 +12659,11 @@ PrefabInstance:
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: set_Value
+      objectReference: {fileID: 0}
+    - target: {fileID: 9028399896345759867, guid: 9cc2d3b013dc93e4e947d773951022de,
+        type: 3}
+      propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetFixedOwnerMe
       objectReference: {fileID: 0}
     - target: {fileID: 9028399896345759867, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
@@ -12514,6 +12719,11 @@ PrefabInstance:
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: Engage.AFX.v1.ValueComponent`1[[System.Boolean, mscorlib
+      objectReference: {fileID: 0}
+    - target: {fileID: 9028399896345759867, guid: 9cc2d3b013dc93e4e947d773951022de,
+        type: 3}
+      propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Engage.IFX.NetworkStates.NetworkStateModule, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 9028399896345759867, guid: 9cc2d3b013dc93e4e947d773951022de,
         type: 3}
@@ -13137,7 +13347,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectRefsEngine:
   - referenceName: ifbuttoned
-    referenceValue: {fileID: 0}
+    referenceValue: {fileID: 3050397848950560514}
     typeAsString: Engage.AFX.v1.BoolComponent, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   - referenceName: gameobjects to change
@@ -14137,11 +14347,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectRefsEngine:
   - referenceName: ifbuttoned
-    referenceValue: {fileID: 0}
+    referenceValue: {fileID: 8933959068131904916}
     typeAsString: Engage.AFX.v1.BoolComponent, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   - referenceName: gameobjects to change
-    referenceValue: {fileID: 0}
+    referenceValue: {fileID: 4370048712044109526}
     typeAsString: Engage.AFX.v1.ListGameObjectComponent, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2684912504625533529
@@ -14786,11 +14996,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectRefsEngine:
   - referenceName: ifbuttoned
-    referenceValue: {fileID: 0}
+    referenceValue: {fileID: 304518223212776546}
     typeAsString: Engage.AFX.v1.BoolComponent, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   - referenceName: gameobjects to change
-    referenceValue: {fileID: 0}
+    referenceValue: {fileID: 28298591336024090}
     typeAsString: Engage.AFX.v1.ListGameObjectComponent, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &3502016517996338741
@@ -14966,11 +15176,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectRefsEngine:
   - referenceName: ifbuttoned
-    referenceValue: {fileID: 0}
+    referenceValue: {fileID: 5517932431630077223}
     typeAsString: Engage.AFX.v1.BoolComponent, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   - referenceName: gameobjects to change
-    referenceValue: {fileID: 0}
+    referenceValue: {fileID: 2516892397061411061}
     typeAsString: Engage.AFX.v1.ListGameObjectComponent, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1888372626894890659
@@ -15036,11 +15246,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectRefsEngine:
   - referenceName: ifbuttoned
-    referenceValue: {fileID: 0}
+    referenceValue: {fileID: 3012479611025446253}
     typeAsString: Engage.AFX.v1.BoolComponent, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   - referenceName: gameobjects to change
-    referenceValue: {fileID: 0}
+    referenceValue: {fileID: 7094783952924418716}
     typeAsString: Engage.AFX.v1.ListGameObjectComponent, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   - referenceName: buttonON
@@ -15141,11 +15351,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectRefsEngine:
   - referenceName: ifbuttoned
-    referenceValue: {fileID: 0}
+    referenceValue: {fileID: 5762334864006808532}
     typeAsString: Engage.AFX.v1.BoolComponent, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   - referenceName: gameobjects to change
-    referenceValue: {fileID: 0}
+    referenceValue: {fileID: 5515366607952648065}
     typeAsString: Engage.AFX.v1.ListGameObjectComponent, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &7009271039115353
@@ -19435,7 +19645,7 @@ PrefabInstance:
     - target: {fileID: 8294132786036350885, guid: 2c9d3d1fdf835404483c9f7e792e0822,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.size
-      value: 19
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8294132786036350885, guid: 2c9d3d1fdf835404483c9f7e792e0822,
         type: 3}
@@ -19520,7 +19730,7 @@ PrefabInstance:
     - target: {fileID: 8294132786036350885, guid: 2c9d3d1fdf835404483c9f7e792e0822,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[19].m_Mode
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8294132786036350885, guid: 2c9d3d1fdf835404483c9f7e792e0822,
         type: 3}
@@ -19681,7 +19891,7 @@ PrefabInstance:
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[19].m_Target
       value: 
-      objectReference: {fileID: 8876380674179298085}
+      objectReference: {fileID: 2510024505343026121}
     - target: {fileID: 8294132786036350885, guid: 2c9d3d1fdf835404483c9f7e792e0822,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[20].m_Target
@@ -19985,7 +20195,7 @@ PrefabInstance:
     - target: {fileID: 8294132786036350885, guid: 2c9d3d1fdf835404483c9f7e792e0822,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[19].m_MethodName
-      value: set_Value
+      value: SetFixedOwnerMe
       objectReference: {fileID: 0}
     - target: {fileID: 8294132786036350885, guid: 2c9d3d1fdf835404483c9f7e792e0822,
         type: 3}
@@ -20145,7 +20355,7 @@ PrefabInstance:
     - target: {fileID: 8294132786036350885, guid: 2c9d3d1fdf835404483c9f7e792e0822,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[19].m_TargetAssemblyTypeName
-      value: Engage.AFX.v1.ValueComponent`1[[System.Boolean, mscorlib
+      value: Engage.IFX.NetworkStates.NetworkStateModule, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8294132786036350885, guid: 2c9d3d1fdf835404483c9f7e792e0822,
         type: 3}

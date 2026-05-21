@@ -12,5 +12,9 @@ namespace Engage.AFX.GrabSystem.v2
         {
             restTransform = newRestPoint;
         }
+
+        private void OnEnable()
+        {
+        }
     }
 }

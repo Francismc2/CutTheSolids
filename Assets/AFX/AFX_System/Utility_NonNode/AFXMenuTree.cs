@@ -46,7 +46,8 @@ namespace Engage.AFX.v1
         public const string Instantiate = GameObject + "Instantiate/";
         //Invoke Events 
         public const string EventsInvoke = Events + "Invoke/";
-
+        //Input Events
+        public const string EventsInput = Events + "Input/";
         //Unity Events 
         public const string EventsUnity = Events + "Unity/";
         public const string EventsCollision = Events + "Collision/";

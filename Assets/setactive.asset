@@ -1,5 +1,64 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7541910302630948303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc3dca792df08c744b1d82acb9d4a4ea, type: 3}
+  m_Name: Take Network State Ownership
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 2328, y: 1448}
+  ports:
+    keys:
+    - module
+    - playerID
+    - enter
+    - exit
+    values:
+    - _fieldName: module
+      _node: {fileID: -7541910302630948303}
+      _typeQualifiedName: Engage.IFX.NetworkStates.NetworkStateModule, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: playerID
+      _node: {fileID: -7541910302630948303}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: enter
+      _node: {fileID: -7541910302630948303}
+      _typeQualifiedName: Engage.AFX.v1.AFXFlow, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: -7541910302630948303}
+      _typeQualifiedName: Engage.AFX.v1.AFXFlow, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+  module: {fileID: 0}
+  playerID: -1
 --- !u!114 &-5152287200122396875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,7 +216,7 @@ MonoBehaviour:
       _typeConstraint: 2
       _dynamic: 0
   loop: 0
-  duration: 2
+  duration: 1
   unscaledTime: 0
   elapsed: 0
   remaining: 0
@@ -594,6 +653,7 @@ MonoBehaviour:
   - {fileID: -2481728082279079790}
   - {fileID: -5152287200122396875}
   - {fileID: -2484465796966091525}
+  - {fileID: -7541910302630948303}
 --- !u!114 &5116408010192522867
 MonoBehaviour:
   m_ObjectHideFlags: 0

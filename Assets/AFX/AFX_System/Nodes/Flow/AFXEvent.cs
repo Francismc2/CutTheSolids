@@ -8,6 +8,11 @@ namespace Engage.AFX.v1
         private List<AFXEventComponent> componentEventListeners = new List<AFXEventComponent>();
         private List<OnAFXEventInvoked> nodeEventListeners = new List<OnAFXEventInvoked>();
 
+        private void OnEnable()
+        {
+            ClearListeners();
+        }
+
         public void TriggerEvent()
         {
             for (int i = componentEventListeners.Count - 1; i >= 0; i--)

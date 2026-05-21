@@ -2,7 +2,7 @@
 using XNode;
 namespace Engage.AFX.v1
 {
-    [CreateNodeMenu(AFXMenuTree.String + "Combine")]
+    [CreateNodeMenu(AFXMenuTree.String + "String Combine")]
     public class StringCombine : AFXNode
     {
         [SerializeField]

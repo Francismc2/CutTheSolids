@@ -12,5 +12,9 @@ namespace Engage.AFX.GrabSystem.v2
         [SerializeField] private List<GrabObject> excludedGrabObjects;
 
         public List<GrabObject> ExcludedGrabObjects { get => excludedGrabObjects; }
+
+        private void OnEnable()
+        {
+        }
     }
 }

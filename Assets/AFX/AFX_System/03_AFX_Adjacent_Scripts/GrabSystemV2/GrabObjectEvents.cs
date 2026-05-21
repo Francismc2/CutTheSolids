@@ -10,5 +10,9 @@ namespace Engage.AFX.GrabSystem.v2
         [SerializeField] private UnityEvent onGrab;
         [SerializeField] private UnityEvent onGrabStay;
         [SerializeField] private UnityEvent onGrabRelease;
+
+        private void OnEnable()
+        {
+        }
     }
 }

@@ -10,12 +10,8 @@ namespace Engage.AFX.GrabSystem.v2
         [SerializeField] private float throwStrength = 1;
         [SerializeField] private bool useObjectMass = false;
 
-        private GrabObject grabObject;
-
-        private PhysicsTracker physicsTracker = new();
-
-        private Vector3 throwVelocity;
-        private Vector3 throwAngularVelocity;
-        private float mouseThrowStrength;
+        private void OnEnable()
+        {
+        }
     }
 }

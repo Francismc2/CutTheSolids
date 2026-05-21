@@ -12,8 +12,8 @@ namespace Engage.AFX.GrabSystem.v2
         [SerializeField] private bool y;
         [SerializeField] private bool z;
 
-        private GrabObject grabObject;
-        private Vector3? lastCrankAngle;
-        private Vector3 colliderCenter;
+        private void OnEnable()
+        {
+        }
     }
 }

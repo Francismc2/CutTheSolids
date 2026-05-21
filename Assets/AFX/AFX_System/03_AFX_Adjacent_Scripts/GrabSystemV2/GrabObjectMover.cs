@@ -8,5 +8,9 @@ namespace Engage.AFX.GrabSystem.v2
     {
         [SerializeField] private bool movable = true;
         [SerializeField] private bool rotatable = true;
+
+        private void OnEnable()
+        {
+        }
     }
 }

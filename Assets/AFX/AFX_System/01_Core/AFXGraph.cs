@@ -11,6 +11,7 @@ namespace Engage.AFX.v1
     public class AFXGraph : NodeGraph
     {
         private const float graphVersion = 1.000f; // Update this with every major revision of system.
+
         public float GraphVersion { get => graphVersion;}
         public bool RequiresRefSlotRefresh { get; set; }
 
@@ -23,10 +24,17 @@ namespace Engage.AFX.v1
         public Action AFXOnEnable { get; set; }
         public Action AFXOnDisable { get; set; }
 
+        public AFXEngine Engine { get; private set; }
+
         [SerializeField]
         public Dictionary<string, NodePort> RegisteredObjects { get; } = new Dictionary<string, NodePort>();
         public Action RegisteredObjectAdded { get; set;}
         public Action RegisteredObjectRemoved { get; set;}
+
+        public void Init(AFXEngine engine) 
+        {
+            Engine = engine;
+        }
 
         public override NodeGraph Copy()
         {

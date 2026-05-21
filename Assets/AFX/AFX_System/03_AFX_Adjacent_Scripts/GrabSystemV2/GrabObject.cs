@@ -1,5 +1,3 @@
-using Engage.AFX.v1;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Engage.AFX.GrabSystem.v2
@@ -16,8 +14,13 @@ namespace Engage.AFX.GrabSystem.v2
 
         //Grabs will redirect to networking module if there is one.
         public delegate void GrabDelegate(GrabInfo grabInfo);
-        private GrabDelegate localOnGrab;
-        private GrabDelegate localOnGrabStay;
-        private GrabDelegate localOnGrabRelease;
+
+        public void ForceReleaseGrab(bool skipReleaseEvent = false)
+        {
+        }
+
+        public void SetKinematic(bool isKinematic)
+        {
+        }
     }
 }

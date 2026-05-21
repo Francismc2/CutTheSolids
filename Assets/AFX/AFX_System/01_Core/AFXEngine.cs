@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Linq;
+using Engage.AFX.v1.InputManagement;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -36,6 +37,7 @@ namespace Engage.AFX.v1
 
         private AFXGraph afxNodeGraphRuntimeVersion;
         public AFXGraph AfxNodeGraphRuntimeVersion { get => afxNodeGraphRuntimeVersion; set => afxNodeGraphRuntimeVersion = value; }
+        //public AFXInputManagement AfxInputManagement { get; private set; } = new();
 
         private int timesChecked;
         private bool ready;
@@ -44,6 +46,7 @@ namespace Engage.AFX.v1
         private void Awake()
         {
             AfxNodeGraphRuntimeVersion = AFXNodeGraph.Copy() as AFXGraph; // get an editable runtime version of the graph, instantiates all the nodes too.
+            AfxNodeGraphRuntimeVersion.Init(this);
         }
 
         private IEnumerator Start()
@@ -77,6 +80,11 @@ namespace Engage.AFX.v1
         private void OnDisable()
         {
             AfxNodeGraphRuntimeVersion.AFXOnDisable?.Invoke();
+        }
+
+        private void OnDestroy()
+        {
+            //AfxInputManagement.Dispose();
         }
 
         private void Update()

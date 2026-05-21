@@ -8,5 +8,8 @@ namespace Engage.AFX.GrabSystem.v2
     public class GrabObjectNetworking : NetworkStateModule
     {
         [SerializeField] private float interpolateSpeed = 1f;
+        private void OnEnable()
+        {
+        }
     }
 }
